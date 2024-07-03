@@ -28,6 +28,15 @@ import (
 
 // Server interface implementation, defines a Server service class
 // (接口实现，定义一个Server服务类)
+/*
+IServer
+|__zconf.Config
+|__ziface.IMsgHandle
+|__ziface.IConnManager
+|__ziface.IDataPack
+|__ziface.IDecoder
+|__ziface.IHeartbeatChecker
+*/
 type Server struct {
 	// Name of the server (服务器的名称)
 	Name string
